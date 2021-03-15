@@ -16,4 +16,4 @@ sudo mv Papirus* /usr/share/icons/ && sudo mv ePapirus/ /usr/share/icons/
 sudo gtk-update-icon-cache /usr/share/icons/Papirus && sudo gtk-update-icon-cache /usr/share/icons/Papirus-Dark/ && sudo gtk-update-icon-cache /usr/share/icons/Papirus-Light/ && sudo gtk-update-icon-cache /usr/share/icons/ePapirus/
 
 echo "Cleaning redundent files..."
-rm ./themes/AUTHORS ./themes/Makefile ./themes/LICENSE
+rm AUTHORS Makefile LICENSE
