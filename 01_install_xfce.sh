@@ -9,3 +9,4 @@ sudo apt remove nautilus gnome-power-manager gnome-screensaver gnome-termina* gn
 
 sudo apt install lightdm
 sudo apt autoremove
+echo "Reboot the system"
