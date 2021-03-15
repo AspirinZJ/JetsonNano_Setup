@@ -2,7 +2,7 @@
 
 sudo apt remove -y xarchiver
 
-rm ~/.config/user-dirs.dirs && cp user-dirs.dirs ~/.config/
+rm ~/.config/user-dirs.dirs && cp ./resources/user-dirs.dirs ~/.config/
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
@@ -22,3 +22,8 @@ if [ ! -f /~/.SpaceVim.d/init.toml ]; then
 fi
 
 cp ./SpaceVim_settings/init.toml ~/.SpaceVim.d/
+
+# remove some software
+sudo apt remove gnome-mahjongg aisleriot baobab seahorse gnome-accessibility-themes -y
+sudo apt remove gnome-getting-started-docs gnome-shell-extension-appindicator gnome-shell-extension-ubuntu-dock gnome-disk-utility -y
+sudo apt update && sudo apt autoremove -y
