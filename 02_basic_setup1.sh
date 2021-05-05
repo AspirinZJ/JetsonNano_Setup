@@ -70,6 +70,7 @@ sudo apt remove -y mousepad
 sudo apt update && sudo apt autoremove -y
 sudo apt remove -y transmission-* remmina*
 sudo apt update && sudo apt autoremove -y
+sudo apt install -y python3-pip
 
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"

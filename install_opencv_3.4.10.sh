@@ -51,4 +51,6 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 
+rm ~/opencv-3.4.10.zip
+
 echo "Install OpenCV 3.4.10 successfully."

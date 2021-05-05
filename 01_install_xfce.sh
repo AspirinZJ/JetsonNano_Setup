@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt update
+sudo apt upgrade -y
 sudo apt install -y xfce4
 
 echo "You could choose lightdm to run with a lighter display manager."
