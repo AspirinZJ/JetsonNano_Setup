@@ -75,9 +75,34 @@ sudo apt install -y python3-pip
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
 
-echo "Generating ssh key"
-ssh-keygen -t rsa
+sudo apt remove -y xarchiver
 
-cat ~/.ssh/id_rsa.pub
+# rm ~/.config/user-dirs.dirs && cp ./resources/user-dirs.dirs ~/.config/
 
-echo "Paste the key to Github"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+rustup component add rls rust-analysis rust-src
+
+echo "Installing SpaceVim, run `curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall` to uninstall"
+
+curl -sLf https://spacevim.org/install.sh | bash
+vim
+vim
+
+cd ~
+git clone git@github.com:AspirinZJ/SpaceVim_settings.git
+
+if [ ! -f /~/.SpaceVim.d/init.toml ]; then
+	rm ~/.SpaceVim.d/init.toml
+fi
+
+cp ./SpaceVim_settings/init.toml ~/.SpaceVim.d/
+
+# remove some software
+sudo apt remove gnome-mahjongg aisleriot baobab seahorse gnome-accessibility-themes -y
+sudo apt remove gnome-getting-started-docs gnome-shell-extension-appindicator gnome-shell-extension-ubuntu-dock gnome-disk-utility -y
+sudo apt remove rhythmbox* -y
+sudo apt remove file-roller -y
+sudo apt remove catfis -y
+sudo apt remove gucharmap -y
+sudo apt update && sudo apt autoremove -y
