@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-sudo apt install python-catkin-tools -y
+sudo apt install python-catkin-tools ros-melodic-catkin -y
 
 echo "~~~~~~~Specify the folder name you want to build cv_bridge with python3. Example: catkin_ws~~~~~~~"
 echo "~~~~~~~Use absolute path. DO NOT use relative path"

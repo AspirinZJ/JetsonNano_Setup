@@ -103,6 +103,6 @@ sudo apt remove gnome-mahjongg aisleriot baobab seahorse gnome-accessibility-the
 sudo apt remove gnome-getting-started-docs gnome-shell-extension-appindicator gnome-shell-extension-ubuntu-dock gnome-disk-utility -y
 sudo apt remove rhythmbox* -y
 sudo apt remove file-roller -y
-sudo apt remove catfis -y
+sudo apt remove catfish -y
 sudo apt remove gucharmap -y
 sudo apt update && sudo apt autoremove -y

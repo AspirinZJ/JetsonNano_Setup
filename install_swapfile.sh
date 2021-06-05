@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./resources/installSwapfile/installSwapfile.sh -s 12
+./resources/installSwapfile/installSwapfile.sh -s 16
 
