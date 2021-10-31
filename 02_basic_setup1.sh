@@ -106,3 +106,6 @@ sudo apt remove file-roller -y
 sudo apt remove catfish -y
 sudo apt remove gucharmap -y
 sudo apt update && sudo apt autoremove -y
+
+# install JetbrainsMono font
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
